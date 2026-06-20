@@ -7,9 +7,6 @@ __pycache__/
 venv/
 env/
 
-# Local ATLAS/ROOT datasets (too large for normal Git hosting)
-*.root
-
 # Common local tooling files
 .pytest_cache/
 .mypy_cache/
