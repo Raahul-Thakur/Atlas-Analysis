@@ -3,6 +3,14 @@
 from __future__ import annotations
 
 from pathlib import Path
+import sys
+
+
+# Streamlit Community Cloud executes this file with dashboard/ on sys.path.
+# Add the repository root so the sibling atlas_analysis package is importable.
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+if str(REPOSITORY_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPOSITORY_ROOT))
 
 import pandas as pd
 import streamlit as st
