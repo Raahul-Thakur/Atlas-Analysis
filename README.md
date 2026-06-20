@@ -46,9 +46,10 @@ Place ATLAS Open Data ROOT files under `data/`:
 
 ```text
 data/
-  sample_1.root
-  sample_2.root
+  sample_1lep.root
 ```
+
+`main` includes a compact 50,000-event sample for local use and Streamlit deployment. The full `data_A.1lep.root` dataset is stored with Git LFS on the `full-data-lfs` branch so deployment does not need to clone 1.6 GB. Other local `.root` files are ignored by Git.
 
 The code is intentionally schema-flexible. It searches for common educational/open-data branch names for leptons, jets, MET, weights, triggers, event IDs, and b-tags. If a branch is absent, the pipeline keeps running where possible and reports missing channel-critical branches.
 
@@ -160,6 +161,7 @@ streamlit run dashboard\app.py
 ```
 
 The dashboard lets you choose the ROOT folder, file pattern, tree name, max files, max events, analysis channel, object pT cuts, plot type, and output folder.
+It defaults to the deployable `data/sample_1lep.root` sample.
 It also has an `atlasopenmagic` mode where you can enter a release, dataset key, skim, and protocol to stream files without manually downloading them first.
 It previews `summary.csv`, `selected_events.csv`, `cutflow.csv`, the resolved branch map, channel-specific plots, and provides CSV download buttons.
 

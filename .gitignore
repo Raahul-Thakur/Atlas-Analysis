@@ -7,6 +7,11 @@ __pycache__/
 venv/
 env/
 
+# Large ROOT datasets stay off the deployable branch. The compact dashboard
+# sample is intentionally versioned below.
+*.root
+!data/sample_1lep.root
+
 # Common local tooling files
 .pytest_cache/
 .mypy_cache/

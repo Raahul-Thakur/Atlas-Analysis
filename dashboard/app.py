@@ -20,7 +20,7 @@ with st.sidebar:
     st.header("Input")
     use_magic = st.checkbox("Use atlasopenmagic URLs")
     input_folder = st.text_input("ROOT file folder", "data")
-    pattern = st.text_input("File pattern", "*.root")
+    pattern = st.text_input("File pattern", "sample_1lep.root")
     release = st.text_input("ATLAS release", "2024r-pp", disabled=not use_magic)
     dataset = st.text_input("Dataset key", "data", disabled=not use_magic)
     skim = st.text_input("Skim", "noskim", disabled=not use_magic)
