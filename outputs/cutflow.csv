@@ -1,0 +1,8 @@
+channel,step,events,weighted_events
+w_munu,all events,10000,10000.0
+w_munu,trigger passed,4517,4517.0
+w_munu,exactly one lepton,2563,2563.0
+w_munu,second lepton veto,2563,2563.0
+w_munu,MET cut,1757,1757.0
+w_munu,transverse mass cut,1693,1693.0
+w_munu,final selected,1693,1693.0

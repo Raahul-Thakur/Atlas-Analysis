@@ -1,0 +1,25 @@
+{
+  "input_folder": "data",
+  "input_files": null,
+  "pattern": "data_A.1lep.root",
+  "output_folder": "outputs",
+  "tree_name": null,
+  "max_files": null,
+  "max_events": 10000,
+  "channel": "w_munu",
+  "cuts": {
+    "electron_pt": 25.0,
+    "electron_abs_eta": 2.47,
+    "muon_pt": 25.0,
+    "muon_abs_eta": 2.5,
+    "jet_pt": 30.0,
+    "jet_abs_eta": 2.5,
+    "met": 30.0,
+    "w_mt_min": 30.0,
+    "max_iso_ratio": 0.15,
+    "z_mass_min": 80.0,
+    "z_mass_max": 100.0
+  },
+  "make_plots": true,
+  "apply_triggers": true
+}
